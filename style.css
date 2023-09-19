@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: url(./Img/bg.jpg) no-repeat center center/cover;
+    color: white;
+    overflow-y: hidden;
+
+}
+
+header {
+    width: 100vh;
+    position: sticky;
+}
+
+.header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-weight: 900;
+    margin-top: 1rem;
+
+}
+
+.header img {
+    width: 3rem;
+    margin-left: 2rem;
+}
+
+.header h1 {
+    margin-left: .5rem;
+}
+
+
+.container {
+    width: 50%;
+    margin-left: 6rem;
+    margin-top: 2 rem;
+    /* display: flex; */
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.container .scroll{
+    height: 64.5vh;
+    overflow-x: hidden;
+
+}
+
+.container h1 {
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+}
+
+.container .box {
+  
+    border: 2px solid #9b7474;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    background-color: #544f4f;
+    padding: .2rem .6rem;
+    border-radius: 3rem;
+    height: 3.5rem;
+    margin-top: .8rem;
+    overflow: hidden;
+}
+
+.container .box img {
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.container .box h3 {
+    font-size: 2rem;
+}
+
+.container .box i {
+    font-size: 2rem;
+}
+
+.music-play {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    height: 10vh;
+    width: 80%;
+    margin: 0rem auto;
+    justify-content: center;
+    position: fixed;
+    /* background: red; */
+    
+}
+
+.music-play .music-name{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 3rem;
+    width: 40%;
+  
+    
+}
+.music-play .music-name #gif{
+    opacity: 0;
+    transition: .9s;
+}
+
+.music-play .music-name h5{
+    font-size: 2rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.music-play .music-name img {
+    width: 7rem;
+    margin-right: .5rem;
+}
+
+.music-play .playing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: red; */
+    flex-direction: column;
+    width: 50%;
+    /* border: 1px solid red; */
+}
+
+.music-play .playing input{
+    width: 46vw;
+    color: red;
+}
+
+.music-play .playing i{
+    font-size: 3rem;
+    margin: .5rem .4rem;
+}
